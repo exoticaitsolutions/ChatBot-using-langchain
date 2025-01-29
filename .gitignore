@@ -1,0 +1,9 @@
+# Virtual environment
+.venv/
+.env/
+venv/
+.env
+storage
+storage/
+pdf_storage
+pdf_storage/
