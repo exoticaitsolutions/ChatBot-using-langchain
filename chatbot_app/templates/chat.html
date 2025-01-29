@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.ctfassets.net/ukazlt65o6hl/1rWCLaP3w1iMUSkZsg9dG4/ab39b7646762b37b2296c07ae08182ff/MicrosoftTeams-image__55_.png?w=750&h=386&fl=progressive&q=70&fm=jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbox {
+            width: 700px;
+            height: 500px;
+            max-height: 400px; /* Set a maximum height */
+            overflow-y: auto; /* Add scrollbars when content exceeds the height */
+            margin: 50px auto;
+            background-color: #d5dfea;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .chat {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .user {
+            color: #423d3d;
+            background-color: #aaa7a7;
+            padding: 17px;
+            border-radius: 42px;
+            margin-bottom: 10px;
+            align-self: flex-start; /* Align user messages to the left */
+            text-align: left; /* Align text inside user messages to the left */
+        }
+
+        .bot {
+            color: #060606;
+            background-color: #c5c2c4;
+            padding: 17px;
+            border-radius: 42px;
+            margin-bottom: 10px;
+            /* align-self: flex-end; */
+             /* Align bot messages to the right */
+            text-align: right; /* Align text inside bot messages to the left */
+        }
+
+        #user-input {
+            width: 70%;
+            padding: 23px;
+            border: 9px solid hwb(0 80% 20%);
+            border-radius: 20px;
+            margin-right: 18px;
+        }
+
+        #send-button {
+            background-color: hsla(0,0%,13%,1);
+            color: #fff;
+            border: aquamarinenone;
+            padding: 27px 41px;
+            border-radius: 11px;
+            cursor: pointer;
+        }
+
+        #loading-message {
+            display: none;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the back button */
+        #back-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Back button -->
+    <button id="back-button" onclick="goBack()">Back</button>
+
+    <div class="chatbox" id="chatbox">
+        
+
+        <ul class="chat" id="chat-list">
+        </ul>
+
+        <div id="loading-message">Bot is processing...</div>
+        <form id="chat-form" action="{% url 'chat' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="query" id="user-input" placeholder="Type your query...">
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
+ 
+    <script>
+        // Function to go back in history
+        function goBack() {
+            window.history.back();
+        }
+
+        function submitQuery() {
+            var userQuery = document.getElementById('user-input').value.trim();
+            if (userQuery) {
+                // Show the loading message
+                document.getElementById('loading-message').style.display = 'block';
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "{% url 'chat' %}", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                // Include CSRF token in the request headers
+                var csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+                        // Hide the loading message
+                        document.getElementById('loading-message').style.display = 'none';
+
+                        if (xhr.status == 200) {
+                            var response = JSON.parse(xhr.responseText);
+                            console.log(response);  // Add this line for debugging
+                            displayResponse('bot', response.result, response.pdf_name);
+                            updateChatboxHeight(); // Adjust chatbox height dynamically
+                        } else {
+                            // Handle error case if needed
+                        }
+                    }
+                };
+
+                xhr.send("query=" + encodeURIComponent(userQuery));
+
+                displayResponse('user', userQuery);
+                document.getElementById('user-input').value = '';
+            }
+        }
+
+        function displayResponse(sender, message, pdfName) {
+            var chatList = document.getElementById('chat-list');
+            var chatMessage = document.createElement('li');
+            chatMessage.className = sender;
+
+            // Check if there is a PDF name
+            var displayMessage = message;
+
+            if (pdfName) {
+                displayMessage += ' ' + pdfName;
+            }
+
+            chatMessage.textContent = displayMessage;
+
+            chatList.appendChild(chatMessage);
+        }
+
+        function updateChatboxHeight() {
+            var chatbox = document.getElementById('chatbox');
+            var newHeight = chatbox.scrollHeight; // Set the new height to the scrollHeight
+
+            // Set the new height for the chatbox
+            chatbox.style.height = newHeight + 'px';
+            chatbox.scrollTop = newHeight; // Scroll to the bottom
+        }
+
+        document.getElementById('chat-form').onsubmit = function (event) {
+            event.preventDefault();
+            submitQuery();
+        };
+        
+    </script>
+
+</body>
+</html>

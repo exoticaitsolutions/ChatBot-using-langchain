@@ -1,6 +1,6 @@
 #  Project Name 
 
-## ChatBot Using Langchain
+## ChatBot Using Langchain Django
 
 # Instructions to run this project
 
@@ -8,7 +8,11 @@
 ```
 pip install -r requirement.txt 
 ```
+
+# Create .env file
+OPENAI_API_KEY = ADD YOUR OPENAI_API_KEY
+
 ## Run file
 ```
-steamlit run main.py
-```# ChatBot-using-langchain
+python manage.py runserver
+```
