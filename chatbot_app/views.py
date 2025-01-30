@@ -11,19 +11,25 @@ from .models import UploadedPDF
 from .forms import UploadPDFForm
 from chatbot_project import settings
 from django.contrib import messages
+from .logging_setup import setup_logging
+
+logger = setup_logging()
+
 
 def upload_pdf(request):
     if request.method == 'POST':
         form = UploadPDFForm(request.POST, request.FILES)
         if form.is_valid():
             pdf_name = form.cleaned_data['pdf_file'].name
-            print("pdf_name : ", pdf_name)
             if UploadedPDF.objects.filter(pdf_file__iexact=pdf_name).exists():
                 messages.error(request, 'PDF with the same name already exists. Please upload another PDF.')
-                return redirect("/")
+                logger.error("PDF with the same name already exists. Please upload another PDF.")
+                return redirect 
             else:
                 form.save()
                 messages.success(request, 'File uploaded successfully.')
+                logger.info("File uploaded successfully.")
+                
 
                 return redirect('/chat/')
     else:
@@ -79,8 +85,7 @@ def chat_view(request):
             for doc in docs:
                 source_attribute = doc.metadata.get('source', None)
                 filename = os.path.basename(source_attribute)
-                print("source attribute :", source_attribute)
-                print("filename :", filename)
+
                 
             response_data = {
                 'result': llm_response.get('result', ''),
@@ -92,6 +97,8 @@ def chat_view(request):
 
         except Exception as err:
             context['error'] = f'Exception occurred. Please try again: {str(err)}'
+            logger.error(f'Exception occurred. Please try again: {str(err)}')
+            
             return JsonResponse(context, status=500)
 
     return render(request, 'chat.html', context)
