@@ -1,5 +1,4 @@
 # Virtual environment
-.venv/
 .env/
 venv/
 .env
@@ -7,3 +6,7 @@ storage
 storage/
 pdf_storage
 pdf_storage/
+Sample-financial-statements (1) (1).pdf/
+Sample-financial-statements (1) (1).pdf
+logs
+logs/
