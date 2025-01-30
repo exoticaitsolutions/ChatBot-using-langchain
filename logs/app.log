@@ -1,0 +1,8 @@
+2025-01-30 15:02:24,291 - INFO - Application Started
+2025-01-30 15:04:52,577 - INFO - Application Started
+2025-01-30 15:04:52,579 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf
+2025-01-30 15:04:52,580 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:04:52,853 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:04:53,744 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-30 15:04:58,050 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-01-30 15:04:58,057 - ERROR - Error processing PDF: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-8D8Df*********************************************jhhg. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}

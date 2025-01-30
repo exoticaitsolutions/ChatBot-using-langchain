@@ -1,0 +1,171 @@
+2025-01-30 15:16:40,049 - INFO - Application Started
+2025-01-30 15:16:46,452 - INFO - Application Started
+2025-01-30 15:16:46,456 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:16:46,457 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:16:46,590 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:16:47,202 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-30 15:16:48,881 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-01-30 15:16:48,885 - ERROR - Error processing PDF: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-8D8Df***************************************vzgz. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-01-30 15:19:13,683 - INFO - Application Started
+2025-01-30 15:19:13,686 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:19:13,689 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:19:13,731 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:19:14,208 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-01-30 15:19:14,210 - ERROR - Error processing PDF: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-8D8Df***************************************vzgz. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-01-30 15:19:18,263 - INFO - Application Started
+2025-01-30 15:19:22,512 - INFO - Application Started
+2025-01-30 15:19:22,515 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:19:22,515 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:19:22,550 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:19:23,937 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-01-30 15:19:23,938 - ERROR - Error processing PDF: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-8D8Df***************************************vzgz. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-01-30 15:24:26,231 - INFO - Application Started
+2025-01-30 15:24:41,687 - INFO - Application Started
+2025-01-30 15:24:41,690 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:24:41,691 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:24:41,824 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:24:42,452 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-30 15:24:45,143 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:24:45,946 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:24:46,018 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:25:09,687 - INFO - Application Started
+2025-01-30 15:25:09,691 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:25:09,698 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:09,760 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:10,982 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:25:11,908 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:12,007 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:25:12,007 - INFO - User query at 2025-01-30 15:25:12: last year 
+2025-01-30 15:25:13,382 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:25:15,984 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:25:16,025 - INFO - Generated response for query: last year 
+2025-01-30 15:25:28,675 - INFO - Application Started
+2025-01-30 15:25:28,677 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:25:28,678 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:28,717 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:30,626 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:25:31,523 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:31,623 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:25:31,623 - INFO - User query at 2025-01-30 15:25:31: last year total expenses
+2025-01-30 15:25:32,608 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:25:33,959 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:25:33,966 - INFO - Generated response for query: last year total expenses
+2025-01-30 15:25:56,864 - INFO - Application Started
+2025-01-30 15:25:56,871 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:25:56,871 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:56,919 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:58,719 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:25:59,596 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:25:59,659 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:25:59,660 - INFO - User query at 2025-01-30 15:25:59: preveious year total expenses
+2025-01-30 15:26:00,989 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:26:04,960 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:26:04,966 - INFO - Generated response for query: preveious year total expenses
+2025-01-30 15:26:13,148 - INFO - Application Started
+2025-01-30 15:26:13,150 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:26:13,151 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:26:13,189 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:26:15,321 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:26:15,696 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:26:15,782 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:26:15,783 - INFO - User query at 2025-01-30 15:26:15: Previous year total expenses
+2025-01-30 15:26:16,860 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:26:19,844 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:26:19,851 - INFO - Generated response for query: Previous year total expenses
+2025-01-30 15:27:00,237 - INFO - Application Started
+2025-01-30 15:27:00,241 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:27:00,243 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:27:00,290 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:27:01,271 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:27:02,007 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:27:02,074 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:27:02,075 - INFO - User query at 2025-01-30 15:27:02: last year net assests
+2025-01-30 15:27:02,898 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:27:06,108 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:27:06,115 - INFO - Generated response for query: last year net assests
+2025-01-30 15:28:59,221 - INFO - Application Started
+2025-01-30 15:28:59,232 - INFO - File uploaded: Manual-Health-Statistics_5june15.pdf on 2025-01-30
+2025-01-30 15:28:59,234 - INFO - Processing started for: ./pdf_storage/Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:29:00,136 - INFO - Successfully split 1189 text chunks from Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:29:05,081 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:29:10,158 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:29:14,604 - INFO - Embeddings stored in ChromaDB for Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:29:14,682 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:29:14,683 - INFO - User query at 2025-01-30 15:29:14: last year net assests
+2025-01-30 15:29:16,175 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:29:19,939 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:29:19,947 - INFO - Generated response for query: last year net assests
+2025-01-30 15:30:03,569 - INFO - Application Started
+2025-01-30 15:30:03,579 - INFO - File uploaded: Manual-Health-Statistics_5june15.pdf on 2025-01-30
+2025-01-30 15:30:03,579 - INFO - Processing started for: ./pdf_storage/Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:30:04,503 - INFO - Successfully split 1189 text chunks from Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:30:07,422 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:30:12,012 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:30:16,590 - INFO - Embeddings stored in ChromaDB for Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:30:16,670 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:30:29,049 - INFO - Application Started
+2025-01-30 15:30:29,070 - INFO - File uploaded: Manual-Health-Statistics_5june15.pdf on 2025-01-30
+2025-01-30 15:30:29,071 - INFO - Processing started for: ./pdf_storage/Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:30:29,983 - INFO - Successfully split 1189 text chunks from Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:30:35,238 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:30:38,919 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:30:41,976 - INFO - Embeddings stored in ChromaDB for Manual-Health-Statistics_5june15.pdf
+2025-01-30 15:30:42,048 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:30:42,049 - INFO - User query at 2025-01-30 15:30:42: STI –Sexually Transmitted Infections
+2025-01-30 15:30:43,810 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:30:51,011 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:30:51,032 - INFO - Generated response for query: STI –Sexually Transmitted Infections
+2025-01-30 15:41:41,221 - INFO - Application Started
+2025-01-30 15:44:00,247 - INFO - Application Started
+2025-01-30 15:44:11,515 - INFO - Application Started
+2025-01-30 15:44:11,520 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:44:11,530 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:44:11,709 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:44:12,410 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-30 15:44:14,653 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:44:15,738 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:44:15,808 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:44:35,157 - INFO - Application Started
+2025-01-30 15:44:35,159 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:44:35,160 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:44:35,201 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:44:37,203 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:44:38,033 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:44:38,100 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:44:38,101 - INFO - User query at 2025-01-30 15:44:38: Previous Year Total expenses 
+2025-01-30 15:44:39,470 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:44:42,128 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:44:42,143 - INFO - Generated response for query: Previous Year Total expenses 
+2025-01-30 15:45:25,455 - INFO - Application Started
+2025-01-30 15:45:25,457 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:45:25,458 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:45:25,495 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:45:26,778 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:45:27,571 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:45:27,640 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:45:27,640 - INFO - User query at 2025-01-30 15:45:27: TOTAL LIABILITIES 
+2025-01-30 15:45:28,319 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:45:29,654 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:45:29,662 - INFO - Generated response for query: TOTAL LIABILITIES 
+2025-01-30 15:46:11,669 - INFO - Application Started
+2025-01-30 15:46:11,671 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:46:11,671 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:46:11,709 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:46:16,345 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:46:17,179 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:46:17,245 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:46:17,246 - INFO - User query at 2025-01-30 15:46:17: Interest of last year
+2025-01-30 15:46:18,763 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:46:20,728 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:46:20,731 - INFO - Generated response for query: Interest of last year
+2025-01-30 15:46:59,549 - INFO - Application Started
+2025-01-30 15:46:59,551 - INFO - File uploaded: Sample-financial-statements (1) (1).pdf on 2025-01-30
+2025-01-30 15:46:59,551 - INFO - Processing started for: ./pdf_storage/Sample-financial-statements (1) (1).pdf
+2025-01-30 15:46:59,590 - INFO - Successfully split 14 text chunks from Sample-financial-statements (1) (1).pdf
+2025-01-30 15:47:01,017 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:47:01,586 - INFO - Embeddings stored in ChromaDB for Sample-financial-statements (1) (1).pdf
+2025-01-30 15:47:01,652 - INFO - RetrievalQA chain created successfully
+2025-01-30 15:47:01,653 - INFO - User query at 2025-01-30 15:47:01: Total cash Received 
+2025-01-30 15:47:03,089 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-30 15:47:05,029 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 15:47:05,031 - INFO - Generated response for query: Total cash Received 
